@@ -30,6 +30,7 @@ public class Door_EndLevelSc : MonoBehaviour
         if (hasKey == true)
         {
             NextLevel.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
