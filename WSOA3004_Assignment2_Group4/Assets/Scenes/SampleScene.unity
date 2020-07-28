@@ -307,28 +307,28 @@ Tilemap:
     m_Data:
       e00: 0
       e01: 14.309448
-      e02: 2.5275375e-29
-      e03: 4.9860115
+      e02: -1.482e-41
+      e03: -5.599964
       e10: NaN
       e11: 4.5904e-41
-      e12: 8.38e-43
-      e13: 8.35e-43
+      e12: 6.68e-43
+      e13: 6.66e-43
       e20: 1.04e-43
-      e21: 2.527588e-29
-      e22: -2.4209378e+33
-      e23: -2.4209378e+33
+      e21: -1.5056e-41
+      e22: 570.9072
+      e23: 570.9072
       e30: 4.5904e-41
-      e31: 8.38e-43
-      e32: 3.48e-43
-      e33: 3.48e-43
+      e31: 6.68e-43
+      e32: 8e-44
+      e33: 8e-44
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: 2.5275375e-29, g: 2.5275375e-29, b: 2.5275375e-29, a: 2.5275375e-29}
+    m_Data: {r: -1.482e-41, g: -1.482e-41, b: -1.482e-41, a: -1.482e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -9, y: -5, z: 0}
-  m_Size: {x: 18, y: 5, z: 1}
+  m_Size: {x: 19, y: 5, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -374,11 +374,11 @@ Light:
   m_GameObject: {fileID: 636571779}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 2
+  m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 3.3904185
+  m_Range: 4.8436666
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -416,7 +416,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
