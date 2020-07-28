@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5647346112809879869}
   - component: {fileID: 679271590014229793}
   - component: {fileID: 6589996892796147723}
+  - component: {fileID: 1364453006426497568}
   m_Layer: 0
   m_Name: HealthCake
   m_TagString: Health
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.023212433, y: -0.04643953}
@@ -109,3 +110,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2572231, y: 2.907121}
   m_EdgeRadius: 0
+--- !u!114 &1364453006426497568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7494014331795549576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd72d1fd46abc545a080eef98990a37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddHealth: 0
