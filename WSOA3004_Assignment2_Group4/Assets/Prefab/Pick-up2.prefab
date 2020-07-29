@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6988478391174917368}
   - component: {fileID: 7814179668989498216}
   - component: {fileID: 7557802083607583953}
+  - component: {fileID: 4945533423167605784}
   m_Layer: 0
   m_Name: Pick-up2
   m_TagString: Untagged
@@ -4914,3 +4915,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &4945533423167605784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2668410147429080171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef86f2753f21e341afcd47f288a6090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1215574151311227438}
   - component: {fileID: 9000512336445448620}
   - component: {fileID: 2602511551072090056}
+  - component: {fileID: 6898876770151533892}
   m_Layer: 0
   m_Name: BrainJar
   m_TagString: Untagged
@@ -4892,5 +4893,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74e31a8d1d6033240b9d7647e0e033af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6898876770151533892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826236224940944342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71caa80d191c9894ca1211756af69175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
