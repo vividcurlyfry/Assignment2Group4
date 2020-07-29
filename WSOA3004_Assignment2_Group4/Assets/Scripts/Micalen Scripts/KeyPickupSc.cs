@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class KeyPickupSc : MonoBehaviour
 {
+    public static KeyPickupSc instance;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -19,8 +24,13 @@ public class KeyPickupSc : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            sickCoverManagerSc.instance.KeypickScWorked = true;
             WinConditionSc.instance.ObjCollected += 1;
-            Destroy(gameObject);
+            DestoryPickup();
         }
+    }
+    void DestoryPickup()
+    {
+      Destroy(gameObject);
     }
 }
