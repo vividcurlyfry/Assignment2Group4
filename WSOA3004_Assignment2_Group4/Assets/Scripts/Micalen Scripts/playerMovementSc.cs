@@ -40,7 +40,7 @@ public class playerMovementSc : MonoBehaviour
         rb.velocity = new Vector2(move, rb.velocity.y);
 
         //Jumping
-        if ((Input.GetKeyDown(KeyCode.Space)) && (isGrounded == true))
+        if ((Input.GetKeyDown(KeyCode.UpArrow)) && (isGrounded == true))
         {
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             isGrounded = false;
