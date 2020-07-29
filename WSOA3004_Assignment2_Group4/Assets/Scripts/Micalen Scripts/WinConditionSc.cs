@@ -30,4 +30,5 @@ public class WinConditionSc : MonoBehaviour
             Door_EndLevelSc.instance.hasKey = true;
         }
     }
+
 }

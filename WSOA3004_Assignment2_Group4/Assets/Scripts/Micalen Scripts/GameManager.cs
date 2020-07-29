@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public bool IsGameover = false;
-    public GameObject EndScreen;
+    public int LoseSceneNumber;
     // Start is called before the first frame update
     private void Awake()
     {
         Time.timeScale = 1f;
-        EndScreen.SetActive(false);
+       
     }
     void Start()
     {
@@ -36,8 +37,7 @@ public class GameManager : MonoBehaviour
     {
         if (IsGameover == true)
         {
-            Time.timeScale = 0f;
-            EndScreen.SetActive(true);
+            SceneManager.LoadScene(LoseSceneNumber);
         }
     }
 }

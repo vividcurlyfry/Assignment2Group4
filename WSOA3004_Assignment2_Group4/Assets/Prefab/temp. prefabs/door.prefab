@@ -123,4 +123,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasKey: 0
-  NextLevel: {fileID: 0}
+  WinSceneNumber: 6

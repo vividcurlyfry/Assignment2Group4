@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Door_EndLevelSc : MonoBehaviour
 {
     public static Door_EndLevelSc instance;
     public bool hasKey = false;
-    public GameObject NextLevel;
+    public int WinSceneNumber;
     // Start is called before the first frame update
     private void Awake()
     {
         instance = this;
 
-        NextLevel.SetActive(false);
     }
     void Start()
     {
@@ -29,8 +29,7 @@ public class Door_EndLevelSc : MonoBehaviour
     {
         if (hasKey == true)
         {
-            NextLevel.SetActive(true);
-            Time.timeScale = 0f;
+            SceneManager.LoadScene(WinSceneNumber);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,4 +39,5 @@ public class Door_EndLevelSc : MonoBehaviour
             EndLevel();
         }
     }
+   
 }
