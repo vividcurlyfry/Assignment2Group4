@@ -14,6 +14,8 @@ public class playerMovementSc : MonoBehaviour
     public int Playerhealth = 100;
     public int Maxhealth = 100;
     public int Minhealth = 0;
+
+    private Animator anim;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -21,7 +23,10 @@ public class playerMovementSc : MonoBehaviour
     }
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();  
+        rb = GetComponent<Rigidbody2D>();
+
+        anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -30,7 +35,10 @@ public class playerMovementSc : MonoBehaviour
         Movement();
         playerhealthcheck();
         PlayerHealthBar.value = Playerhealth;
-        
+
+        //for animation transitions
+        anim.SetFloat("Speed", Mathf.Abs(speed));
+
     }
     public void Movement()
     {
@@ -38,6 +46,12 @@ public class playerMovementSc : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float move= x * speed;
         rb.velocity = new Vector2(move, rb.velocity.y);
+
+
+        //flip sprite
+        Vector2 turnSprite = new Vector2(x, 0);
+        transform.rotation = Quaternion.FromToRotation(Vector3.right, turnSprite);
+       
 
         //Jumping
         if ((Input.GetKeyDown(KeyCode.UpArrow)) && (isGrounded == true))
