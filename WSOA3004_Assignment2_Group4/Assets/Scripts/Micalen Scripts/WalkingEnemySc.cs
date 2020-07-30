@@ -26,6 +26,7 @@ public class WalkingEnemySc : MonoBehaviour
     {
         ThisEnemyRB.velocity = new Vector2(WalkSpeed, ThisEnemyRB.velocity.y);
 
+        //for anim
         anim.SetFloat("Speed", Mathf.Abs(WalkSpeed));
     }
 }
