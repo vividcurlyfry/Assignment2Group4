@@ -14,6 +14,7 @@ public class playerMovementSc : MonoBehaviour
     public int Playerhealth = 100;
     public int Maxhealth = 100;
     public int Minhealth = 0;
+    public AudioSource WalkingSound;
 
     private Animator anim;
     // Start is called before the first frame update
@@ -24,6 +25,8 @@ public class playerMovementSc : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        WalkingSound = GetComponent<AudioSource>();
 
         anim = GetComponent<Animator>();
 

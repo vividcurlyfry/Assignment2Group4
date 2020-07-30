@@ -18,6 +18,10 @@ public class ToesCounterSc : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        UIManagerSc.instance.Toes += 1;
+        if (collision.gameObject.tag == "Player")
+        {
+          UIManagerSc.instance.Toes += 1;
+        }
+        
     }
 }

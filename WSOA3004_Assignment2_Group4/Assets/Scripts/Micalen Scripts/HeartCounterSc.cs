@@ -18,6 +18,10 @@ public class HeartCounterSc : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        UIManagerSc.instance.Hearts += 1;
+        if (collision.gameObject.tag == "Player")
+        {
+          UIManagerSc.instance.Hearts += 1;
+        }
+        
     }
 }

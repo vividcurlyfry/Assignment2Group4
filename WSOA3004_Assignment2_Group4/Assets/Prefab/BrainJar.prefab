@@ -4895,6 +4895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74e31a8d1d6033240b9d7647e0e033af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ItemPickupSound: {fileID: 0}
 --- !u!114 &6898876770151533892
 MonoBehaviour:
   m_ObjectHideFlags: 0

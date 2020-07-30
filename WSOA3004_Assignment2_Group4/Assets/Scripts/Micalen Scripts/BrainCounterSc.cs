@@ -18,6 +18,10 @@ public class BrainCounterSc : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        UIManagerSc.instance.Brains += 1;
+        if (collision.gameObject.tag == "Player")
+        {
+          UIManagerSc.instance.Brains += 1;
+        }
+        
     }
 }

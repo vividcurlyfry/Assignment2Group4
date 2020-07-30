@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthPickupSc : MonoBehaviour
 {
     public int AddHealth;
+    public AudioSource HealthPickupSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class HealthPickupSc : MonoBehaviour
         {
             if (playerMovementSc.instance.Playerhealth < playerMovementSc.instance.Maxhealth)
             {
+             HealthPickupSound.Play();
              playerMovementSc.instance.Playerhealth += AddHealth;
              Destroy(gameObject);
             }

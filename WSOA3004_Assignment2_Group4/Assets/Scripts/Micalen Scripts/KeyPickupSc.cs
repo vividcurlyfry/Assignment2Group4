@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeyPickupSc : MonoBehaviour
 {
     public static KeyPickupSc instance;
+    public AudioSource ItemPickupSound;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -12,7 +13,7 @@ public class KeyPickupSc : MonoBehaviour
     }
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class KeyPickupSc : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            ItemPickupSound.Play();
             sickCoverManagerSc.instance.KeypickScWorked = true;
             WinConditionSc.instance.ObjCollected += 1;
             DestoryPickup();
