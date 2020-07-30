@@ -7,5 +7,6 @@ public class BUTTON : MonoBehaviour
     public void LoadbyIndex(int SceneIndex)
     {
         SceneManager.LoadScene(SceneIndex);
+       
     }
 }
