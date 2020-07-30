@@ -29,4 +29,14 @@ public class WalkingEnemySc : MonoBehaviour
         //for anim
         anim.SetFloat("Speed", Mathf.Abs(WalkSpeed));
     }
+
+    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "redirect")
+        {
+            this.WalkSpeed = WalkSpeed * -1f;
+        } 
+    }
 }

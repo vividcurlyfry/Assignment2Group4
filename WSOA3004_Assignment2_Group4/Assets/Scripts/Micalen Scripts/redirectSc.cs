@@ -15,11 +15,14 @@ public class redirectSc : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+   /* public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
+           
             WalkingEnemySc.instance.WalkSpeed = WalkingEnemySc.instance.WalkSpeed * -1f;
+            Debug.Log("Redirect");
         }
-    }
+    }*/
+    
 }

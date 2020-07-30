@@ -35,9 +35,9 @@ public class playerMovementSc : MonoBehaviour
         Movement();
         playerhealthcheck();
         PlayerHealthBar.value = Playerhealth;
-
+        AnimTrans();
         //for animation transitions
-        anim.SetFloat("Speed", Mathf.Abs(speed));
+        //anim.SetFloat("Speed", Mathf.Abs(speed));
 
     }
     public void Movement()
@@ -58,6 +58,19 @@ public class playerMovementSc : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             isGrounded = false;
+        }
+    }
+
+    void AnimTrans()
+    {
+        if ((Input.GetKeyDown(KeyCode.LeftArrow)) || (Input.GetKeyDown(KeyCode.RightArrow)))
+        {
+            anim.SetBool("isWalking", true);
+        }
+
+        if ((Input.GetKeyUp(KeyCode.LeftArrow)) || (Input.GetKeyUp(KeyCode.RightArrow)))
+        {
+            anim.SetBool("isWalking", false);
         }
     }
     
