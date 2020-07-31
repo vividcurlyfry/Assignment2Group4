@@ -25,6 +25,7 @@ public class TrapSc : MonoBehaviour
             playerMovementSc.instance.Playerhealth -= TrapDamage;
 
             Instantiate(sound, transform.position, Quaternion.identity);
+            
         }
     }
 }
