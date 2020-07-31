@@ -28,6 +28,10 @@ public class WalkingEnemySc : MonoBehaviour
 
         //for anim
         anim.SetFloat("Speed", Mathf.Abs(WalkSpeed));
+
+        //flip sprite
+        Vector2 turn = new Vector2(ThisEnemyRB.velocity.x, 0);
+        transform.rotation = Quaternion.FromToRotation(Vector3.left, turn);
     }
 
     
