@@ -5,6 +5,8 @@ using UnityEngine;
 public class TrapSc : MonoBehaviour
 {
     public int TrapDamage;
+
+    public GameObject sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,9 @@ public class TrapSc : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            playerMovementSc.instance.Playerhealth -= TrapDamage; 
+            playerMovementSc.instance.Playerhealth -= TrapDamage;
+
+            Instantiate(sound, transform.position, Quaternion.identity);
         }
     }
 }
